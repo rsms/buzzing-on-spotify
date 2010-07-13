@@ -1,0 +1,14 @@
+This is a Python client for the Google Buzz API.
+
+The directory structure is organized as follows:
+buzz.py - the Python module for the Buzz API client
+README - this file
+docs - documentatation generated from the code using epydoc
+examples - contains examples showing how to use this client
+tests - contains tests for this client
+third_party - contains the various dependencies for buzz.py
+
+Documentation is generated using epydoc:
+http://epydoc.sourceforge.net/
+This will generate the documentation:
+epydoc buzz.py -o docs
