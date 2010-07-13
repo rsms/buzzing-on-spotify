@@ -30,6 +30,12 @@ Now, it's time to setup and start the machine.
 
 If everything works (yeah, right...) you should see new tracks popping up in the playlist (when observed in a Spotify client). Status and error messages will be printed to the terminal.
 
+*Tip:* If you want to keep the playlist up to date by having the script running "autonomously", you can use the `run-loop.sh` wrapper and `nohup` like this:
+
+    nohup ./run-loop.sh &
+
+And you can now log out from the terminal and the program will continue to run.
+
 ## MIT license
 
 Copyright (c) 2010 Erik Hartwig & Rasmus Andersson

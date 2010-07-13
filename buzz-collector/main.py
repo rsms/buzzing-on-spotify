@@ -87,27 +87,27 @@ def main():
     buzz_query = "open.spotify.com"
     if query:
         buzz_query = "%s %s" % (buzz_query, query)
-    if True:
-        for result in buzz_client.search(query=buzz_query):
-            # if result.geocode:
-            #     print result.geocode
-            #     print result.actor
-            # for x in dir(result):
-            #     print "%s %s" % (x, str(getattr(result, x)))
-            if result.id in seen:
-                continue
-    #            for x in dir(result):
-    #                print "%s: %s" % (x, str(getattr(result, x)))
-    #            return 0
-            seen.add(result.id)
-            link = getSpotifyLink(result)
-            if link:
-                addLink(link)
-                continue
-            m = _SPOTIFY_RE.match(result.content)
-            if m:
-                addLink(m.group(1))
-        time.sleep(1)
+    #if True:
+    for result in buzz_client.search(query=buzz_query):
+        # if result.geocode:
+        #     print result.geocode
+        #     print result.actor
+        # for x in dir(result):
+        #     print "%s %s" % (x, str(getattr(result, x)))
+        if result.id in seen:
+            continue
+#            for x in dir(result):
+#                print "%s: %s" % (x, str(getattr(result, x)))
+#            return 0
+        seen.add(result.id)
+        link = getSpotifyLink(result)
+        if link:
+            addLink(link)
+            continue
+        m = _SPOTIFY_RE.match(result.content)
+        if m:
+            addLink(m.group(1))
+    #time.sleep(1)
     return 0
 
 if __name__ == '__main__':
