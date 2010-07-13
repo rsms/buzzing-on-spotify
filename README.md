@@ -10,7 +10,7 @@ There is a live demo running and the resulting playlist can be found and subscri
 
 > **Be adviced:** this is a *hack*, not a polished product. It might not work at all. This has been tested and is running on Debian Linux.
 
-You will need the folling stuff:
+You will need the following stuff:
 
 - An API key (and secret) for the Google Buzz API. This will get you started: [http://code.google.com/apis/buzz/](http://code.google.com/apis/buzz/)
 
